@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-strong;
+}
+
+p,
+.prose {
+  @apply text-base leading-7 text-gray-800 dark:text-gray-200;
+}
+
+.prose pre {
+  @apply p-2;
+}
+
+.remark-code-title {
+  @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t;
+}
+
+.remark-code-title + div > pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.task-list-item:before {
+  @apply hidden;
+}
+
+.code-line {
+  @apply w-max px-4 -mx-4 border-l-4 border-gray-800;
+}
+
+.highlight-line {
+  @apply -mx-4 bg-gray-700 bg-opacity-50 border-l-4 border-primary-500;
+}
+
+.line-number::before {
+  @apply pr-4 -ml-2 text-gray-400;
+  content: attr(line);
+}
+
+.prose-lg pre {
+  margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  #refs ~ ul > li {
+    word-break: break-all;
+  }
+}
+
+.prose-lg blockquote {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding-right: 8px;
+  border-left-color: #111827;
+}
+
+.dark .dark\:prose-dark blockquote {
+  @apply bg-gray-900;
+}
+
+.prose.prose-lg :not(pre) > code:not([class*='language']) {
+  display: inline-block;
+  color: rgb(34, 36, 38);
+  font-weight: 500;
+  background-color: #dfdcdcc4;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 6px;
+  @apply text-sm;
+}
+
+.prose.prose-lg :not(pre) > code:not([class*='language']) {
+  @apply bg-gray-300 text-gray-700;
+}
+.dark .prose.prose-lg :not(pre) > code:not([class*='language']) {
+  @apply bg-gray-800 text-gray-100;
+}
+
+.prose pre code {
+  font-weight: 500 !important;
+  @apply text-sm leading-7;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+html,
+.lightbox-overlay {
+  /* margin-left: calc(100vw - 100%); */
+  width: 100vw;
+}
+
+html.prevent-scroll {
+  overflow-y: hidden;
+}
+html.lightbox-loading,
+html.lightbox-loading * {
+  cursor: wait !important;
+}
+
+.prose > ul > li:last-child {
+  margin-bottom: 1.25em;
+}
+.prose > ul > li:first-child {
+  margin-top: 1.25em;
+}
+
+.prose > ul > li > *:last-child,
+.prose-lg > ul > li > *:last-child {
+  margin-bottom: 0;
+}
+
+.prose > ul > li > *:first-child,
+.prose-lg > ul > li > *:first-child {
+  margin-top: 0;
+}
+
+.prose ol li:before {
+  background-color: transparent !important;
+}
+
+.prose-lg hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.transition-header {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    transform 0.15s ease-in-out;
+}
+
+* {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
