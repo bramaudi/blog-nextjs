@@ -1,11 +1,13 @@
 .picture-of-me {
-  display: block;
-  margin: 2em auto 3em;
-  padding: 0.3em;
   width: 250px;
   height: 250px;
+  margin: auto;
+  padding: .3em;
   border-radius: 42% 58% 39% 61%/59% 48% 52% 41%;
   background: linear-gradient(to right bottom, #c32a92, #b0249b, #9923a4, #7b27ad, #532db4);
+}
+.picture-of-me img {
+  border-radius: 42% 58% 39% 61%/59% 48% 52% 41%;
 }
 
 .dark .picture-of-me {

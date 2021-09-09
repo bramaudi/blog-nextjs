@@ -1,6 +1,6 @@
 import '@/css/tailwind.css'
 import '@/css/twemoji.css'
-import '@/css/me.css'
+import '@/css/picture-of-me.css'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'

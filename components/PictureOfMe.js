@@ -4,18 +4,17 @@ import { useEffect, useState } from 'react'
 
 const PictureOfMe = () => {
   const { theme } = useTheme()
-  const [source, setSource] = useState('')
-  useEffect(() => {
-    theme === 'dark'
-      ? setSource('/static/images/me-dark.jpg')
-      : setSource('/static/images/me-light.jpg')
-  }, [])
+  const [source, setSource] = useState('/static/images/me-light.jpg')
   useEffect(() => {
     theme === 'dark'
       ? setSource('/static/images/me-dark.jpg')
       : setSource('/static/images/me-light.jpg')
   }, [theme])
-  return <Image className="picture-of-me" alt="Brama Udi" title="Me in Blitar" src={source} />
+  return (
+    <div className="picture-of-me">
+      <Image width="250" height="250" alt="Brama Udi" title="Me in Blitar" src={source} />
+    </div>
+  )
 }
 
 export default PictureOfMe
