@@ -33,7 +33,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
       <BlogSeo url={postUrl} authorDetails={authorDetails} {...frontMatter} />
       <ScrollTop />
       <article className="-mx-3">
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
+        <div className="xl:divide-y xl:divide-gray-300 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-6">
             <div className="space-y-4 md:space-y-2 text-center">
               <dl className="space-y-10">
@@ -60,10 +60,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
             </div>
           </header>
           <div
-            className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
+            className="pb-8 divide-y divide-gray-300 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
+            <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-300 xl:dark:border-gray-700">
               <dt className="sr-only">Authors</dt>
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
@@ -100,7 +100,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
                 </ul>
               </dd>
             </dl>
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
+            <div className="divide-y divide-gray-300 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose prose-lg dark:prose-dark max-w-none">{children}</div>
               <div className="md:flex justify-between items-center pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 <div className="mb-6 md:mb-0">
@@ -133,7 +133,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
               <Comments frontMatter={frontMatter} />
             </div>
             <footer>
-              <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
+              <div className="text-sm font-medium leading-5 divide-gray-300 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
