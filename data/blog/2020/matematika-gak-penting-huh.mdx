@@ -8,6 +8,8 @@ images: ["/static/images/me.jpg"]
 authors: ["default"]
 ---
 
+import Twemoji from './Twemoji.js'
+
 ![Meme Matematika Gak Penting](/static/images/posts/meme-matematika-gak-penting.jpg "Sumber: *gatau, nemu di fb")
 
 Awal ceritanya sih saya iseng coba mempraktek-kan soal yang ada di meme diatas, intinya sih hasil akhir / output yang diharapkan harus jadi seperti ini:
@@ -18,9 +20,9 @@ Awal ceritanya sih saya iseng coba mempraktek-kan soal yang ada di meme diatas, 
 
 Kata **Fizz** berada disetiap kelipatan **3**, **Buzz** dengan kelipatan **5** dan **FizzBuzz** dengan kelipatan **15**.
 
-Kenapa sih iseng? iya karena saya nggak kuliah dan lagi gaada kerjaan aja, tapi katanya sih ini soal juga ada didalam soal interview kerja, jadi ya apa salahnya coba kita kulik.
+Kenapa sih iseng? iya karena saya nggak kuliah dan lagi gaada kerjaan aja <Twemoji emoji="pepe-grin" /> tapi katanya sih ini soal juga ada didalam soal interview kerja, jadi ya apa salahnya coba kita kulik.
 
-Nah awalnya saya yang coding dengan basis hanya berbekal logika saja karena dulu memang cuma kode PHP aja bikin CRUD gitu secara repetitif jadi saya tidak tauh betapa luasnya dunia ini, jadinya yang kepikiran adalah coding seperti berikut, *_ilustrasi saya pake Javascript karena mudah untuk dipraketk-kan dimana saja._
+Nah awalnya saya yang coding dengan basis hanya berbekal logika saja karena dulu memang cuma ngode PHP aja bikin CRUD gitu secara repetitif jadi saya tidak tau betapa luasnya dunia pemrogramman ini <Twemoji emoji="pepe-ugh" />, jadinya yang kepikiran adalah coding seperti berikut; _ilustrasi saya pake Javascript karena mudah untuk dipraketk-kan dimana saja._
 
 ``` js
 // Deklarasi variable yang dibutuhkan
@@ -62,7 +64,7 @@ isFizz = [3, 6, 9, 12, 15, ...]
 
 Kemudian tahap terakhir adalah mencocokan, apabila *index* saat iterasi cocok / berada dalam daftar array `isFizz` maka ganti nilai-nya dengan *Fizz*.
 
-Namun untungnya ada teman se-frekuensi yang bisa diajak sharing ide, beliau ini kepikiran hal berbeda yakni dengan sedikit sentuhan matematis untuk mencari acuan nilai yang akan diubah, dengan sangat cerdas-nya beliau menggunakan perhitungan pembagian 😮, yah betul, ternyata tinggal dibagikan saja saja angka index-nya dengan angka kelipatan (`index` / `kelipatan`).
+Namun untungnya ada teman se-frekuensi yang bisa diajak sharing ide, beliau ini kepikiran hal berbeda yakni dengan sedikit sentuhan matematis untuk mencari acuan nilai yang akan diubah, dengan sangat cerdas-nya beliau menggunakan perhitungan pembagian <Twemoji emoji="pepe-youcantifyoudont" />, yah betul, ternyata tinggal dibagikan saja saja angka index-nya dengan angka kelipatan (`index` / `kelipatan`).
 
 Jadinya untuk setiap nilai yang cocok / termasuk kedalam kelipatan adalah yang hasil-nya jika di bagikan menjadi nilai yang bulat (bukan angka pecahan), jika saya sesuaikan dengan sistem yang baru ini maka secara keseluruhan coding kurang lebih akan menjadi seperti ini;
 
@@ -99,7 +101,14 @@ for (var i = 1; i <= 100; i++) {
 console.log(output)
 ```
 
-Nah semenjak kejadian inilah saya menjadi lebih tertarik untuk belajar matematika matematika, bisa juga dibilang *kesemsem* dalam istilah javanese. Jadi pesan moral yang didapat dari artikel ini adalah:
+Nah semenjak kejadian inilah saya menjadi lebih tertarik untuk belajar matematika lebih dalam, bisa juga dibilang jadi *kesemsem* dalam istilah javanese.
+
+Dulu memang pas sekolah cuma diajari ngitung saja, kadang disuruh ngitung kelereng sama mangga yang jumlah nya kadang gak masuk akal untuk seorang anak kecil, <Twemoji emoji="clown-honker" /> disamping kurangnya pengetahuan akan manfaatnya jadi tidak ada minat untuk belajar.
+
+Kebetulan sekarang sudah dewasa dan pikirannya udah matang jadi dengan mengetahui kasus kegunaannya belajar matematik jauh lebih terasa manfaatnya. <Twemoji emoji="pepe-thumbsup" />
+
+Apalagi ini jika kebetulan didalam konteks pemrogramman, woah sangat vital.
+
+Jadi pesan moral yang didapat dari artikel ini adalah:
 
 > Kita membenci hal yang tidak kita ketahui secara berlebihan dan mencintai hal yang kita ketahui secara berlebihan.
-> — <cite>Brama Udi</cite>
