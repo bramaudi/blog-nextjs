@@ -20,7 +20,7 @@ const Cusdis = ({ mapping }) => {
   }
 
   useEffect(() => {
-    window.CUSDIS?.setTheme(theme)
+    window?.CUSDIS?.setTheme(theme)
   }, [theme])
 
   return (
