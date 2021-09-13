@@ -1,19 +1,9 @@
-import React from './react.svg'
 import Git from './git.svg'
-import Javascript from './javascript.svg'
-import Node from './nodejs.svg'
-import Bash from './bash.svg'
-import Liquid from './liquid.svg'
-import Markdown from './markdown.svg'
+import PHP from './php.svg'
 
 const icons = {
-  react: React,
   git: Git,
-  javascript: Javascript,
-  nodejs: Node,
-  bash: Bash,
-  liquid: Liquid,
-  markdown: Markdown,
+  php: PHP,
 }
 
 const DevIcon = ({ type }) => {
