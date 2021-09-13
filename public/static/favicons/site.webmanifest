@@ -3,8 +3,8 @@
   "short_name": "Bran's Blog",
   "icons": [
     {
-      "src": "/hat.png",
-      "sizes": "72x72",
+      "src": "/applce-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ],

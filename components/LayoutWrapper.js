@@ -55,9 +55,10 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between">
                 <div className="mr-3 flex justify-center items-center">
                   <NextImage
-                    src="/static/images/me.jpg"
+                    src="/static/favicons/apple-touch-icon.png"
                     width={50}
                     height={50}
+                    title="Hey look, it's a penguin!"
                     className="rounded-full"
                   />
                 </div>
