@@ -1,0 +1,61 @@
+---
+title: "Array Tag Replacement"
+date: "2021-09-12"
+type: "php"
+draft: false
+summary: "Replace custom tag with array data"
+---
+
+import Twemoji from './Twemoji.js'
+
+<Twemoji emoji="" />
+
+Create your own simple template engine with PHP on array data type.
+
+```html:template.html
+<ul>
+	[post]
+	<li>
+		<b>[title]</b> - [date]
+	</li>
+	[/post]
+</ul>
+```
+
+```php
+$template = file_get_contents('template.html');
+$compiled = preg_replace_callback(
+	'(\[post\](.*)\[/post\])is',
+	'template_array',
+	$template
+);
+
+function template_array($match) {
+	$posts = [
+		[
+			'title' => 'First post',
+			'date' => '2020-08-22'
+		],
+		[
+			'title' => 'Second post',
+			'date' => '2021-09-11'
+		],
+	];
+
+	$result = '';
+	for ($i=0; $i<count($posts); $i++) {
+		$replace = [
+			'[title]' => $posts[$i]['title'],
+			'[date]' => $posts[$i]['date'],
+		];
+		$result .= str_replace(
+			array_keys($replace),
+			array_values($replace),
+			$match[1]
+		);
+	}
+	return $result;
+}
+
+echo $compiled;
+```
