@@ -1,15 +1,27 @@
 .picture-of-me {
   width: 250px;
   height: 250px;
-  margin: auto;
-  padding: .3em;
+  margin: 0 auto;
+  padding: 0.3em;
   border-radius: 42% 58% 39% 61%/59% 48% 52% 41%;
   background: linear-gradient(to right bottom, #c32a92, #b0249b, #9923a4, #7b27ad, #532db4);
+}
+.picture-of-me > div:first-child {
+  @apply !block;
+}
+.picture-of-me > div:last-child {
+  @apply !hidden;
 }
 .picture-of-me img {
   border-radius: 42% 58% 39% 61%/59% 48% 52% 41%;
 }
 
+.dark .picture-of-me > div:first-child {
+  @apply !hidden;
+}
+.dark .picture-of-me > div:last-child {
+  @apply !block;
+}
 .dark .picture-of-me {
   background: linear-gradient(to right bottom, #0a2946, #163756, #351e5a, #7b27ad, #532db4);
 }
