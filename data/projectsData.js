@@ -1,9 +1,15 @@
 const projectsData = [
   {
-    title: "Noter - Taking note's app",
+    title: 'Converto - Unit converter web app',
+    description: 'Free open source unit converter web app, PWA-ready, Mobile-friednly design.',
+    imgSrc: '/static/images/projects/converto.jpg',
+    href: 'https://converto.bramaudi.my.id',
+  },
+  {
+    title: 'Noter - Simple notes web app',
     description:
-      "Free open source simple taking note's app with cloud backup & sync, work offline and PWA installable.",
-    imgSrc: '/static/images/projects/noter.jpeg',
+      "Free open source simple taking note's web app with cloud backup & sync, work offline and PWA installable.",
+    imgSrc: '/static/images/projects/noter.jpg',
     href: 'https://noter.bramaudi.my.id',
   },
 ]
