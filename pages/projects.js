@@ -17,7 +17,7 @@ const ProjectContainer = ({ title, data }) => {
             description={project.description}
             imgSrc={project.imgSrc}
             href={project.href}
-            repoName={project.repoName}
+            repoGithub={project.repoGithub}
           />
         ))}
       </div>
