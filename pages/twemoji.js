@@ -33,9 +33,10 @@ function Tooltip({ tooltip, children }) {
   return (
     <div className="relative flex items-center">
       <input
-        type="text"
-        className="opacity-0 w-0 p-0 m-0"
         ref={inputRef}
+        type="text"
+        className="absolute"
+        style={{ left: -9999 + 'px' }}
         value={tooltip}
         readOnly
       />
