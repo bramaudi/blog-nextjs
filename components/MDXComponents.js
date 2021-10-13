@@ -4,6 +4,7 @@ import { getMDXComponent } from 'mdx-bundler/client'
 import Image from './Image'
 import CustomLink from './Link'
 import Pre from './Pre'
+import Twemoji from '@/components/Twemoji'
 
 export const MDXComponents = {
   Image,
@@ -13,6 +14,7 @@ export const MDXComponents = {
     const Layout = require(`../layouts/${layout}`).default
     return <Layout {...rest} />
   },
+  Twemoji,
 }
 
 export const MDXLayoutRenderer = ({ layout, mdxSource, ...rest }) => {

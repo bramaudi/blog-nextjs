@@ -12,14 +12,33 @@ export function getStaticProps() {
 
 function Tooltip({ tooltip, children }) {
   const tipRef = createRef(null)
+  const inputRef = createRef(null)
   function handleMouseEnter() {
     tipRef.current.classList.add('opacity-100')
   }
   function handleMouseLeave() {
     tipRef.current.classList.remove('opacity-100')
   }
+  function handleCopy() {
+    inputRef.current.select()
+    document.execCommand('copy')
+
+    tipRef.current.classList.add('!bg-green-700')
+    tipRef.current.textContent = 'Copied!'
+    setTimeout(() => {
+      tipRef.current.classList.remove('!bg-green-700')
+      tipRef.current.textContent = tooltip
+    }, 500)
+  }
   return (
     <div className="relative flex items-center">
+      <input
+        type="text"
+        className="opacity-0 w-0 p-0 m-0"
+        ref={inputRef}
+        value={tooltip}
+        readOnly
+      />
       <div
         className="absolute whitespace-nowrap px-2 bottom-12 -left-3 rounded flex items-center transition-all duration-150 opacity-0 bg-gray-600 text-white dark:bg-gray-800"
         ref={tipRef}
@@ -27,11 +46,13 @@ function Tooltip({ tooltip, children }) {
         {tooltip}
       </div>
       <div
-        className="select-none"
+        className="select-none cursor-pointer"
+        onClick={handleCopy}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onTouchStart={handleMouseEnter}
         onTouchEnd={handleMouseLeave}
+        aria-hidden="true"
       >
         {children}
       </div>
@@ -53,7 +74,7 @@ export default function Tags(props) {
       <div className="pt-5">
         {emojies.map((path) => (
           <div className="inline-block mb-2" key={path}>
-            <Tooltip tooltip={path}>
+            <Tooltip tooltip={`:${path}:`}>
               <Twemoji size="twa-3x" emoji={path} />
             </Tooltip>
           </div>
