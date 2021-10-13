@@ -45,6 +45,12 @@
 }
 
 /* End preamble; begin emoji classes */
+.twa-hourglass-not-done {
+  background-image: url('https://twemoji.maxcdn.com/v/latest/svg/23f3.svg');
+}
+.twa-calendar {
+  background-image: url('https://twemoji.maxcdn.com/v/latest/svg/1f4c5.svg');
+}
 .twa-pepe-ugh {
   background-image: url('/static/emoji/pepe_ugh.png');
 }

@@ -13,13 +13,13 @@ class MyDocument extends Document {
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/static/favicons/apple-touch-icon.png"
+            href="/static/favicons/favicon-32x32.png"
           />
           <link
             rel="icon"
-            type="image/jpg"
+            type="image/png"
             sizes="16x16"
-            href="/static/favicons/apple-touch-icon.jpg"
+            href="/static/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
           <link rel="mask-icon" href="/static/favicons/apple-touch-icon.png" color="#fff" />

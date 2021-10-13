@@ -1,9 +1,9 @@
 const siteMetadata = {
-  title: "Bram's Blog",
+  title: 'bramaudi',
   author: 'Brama Udi',
-  headerTitle: "Bram's blog",
+  headerTitle: 'bramaudi',
   footerTitle: 'Brama Udi',
-  description: 'Blog personal mas Bram',
+  description: 'Personal Website',
   snippets: 'Reuseable code snippets collected by Brama Udi',
   language: 'en-us',
   siteUrl: 'https://bramaudi.my.id',
